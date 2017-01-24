@@ -1,0 +1,64 @@
+Last login: Mon Jan 23 17:17:29 on ttys000
+Jihoonui-MacBook-Pro:~ jaceyoon$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	test_folder
+Jihoonui-MacBook-Pro:~ jaceyoon$ cd Desktop
+Jihoonui-MacBook-Pro:Desktop jaceyoon$ mkdir DojoAssignments
+Jihoonui-MacBook-Pro:Desktop jaceyoon$ cd Dojoassignments
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ mkdir WebFundamentals
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ mkdir Python
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ mkdir MEAN
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ mkdir Ruby
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ mkdir iOS
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ mkdir netCore
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ ls
+MEAN		Ruby		iOS
+Python		WebFundamentals	netCore
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ cd WebFundamentals
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ touch about.txt
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ cd ..
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ cd Python
+Jihoonui-MacBook-Pro:Python jaceyoon$ touch about.txt
+Jihoonui-MacBook-Pro:Python jaceyoon$ cd ..
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ cd MEAN
+Jihoonui-MacBook-Pro:MEAN jaceyoon$ touch about.txt
+Jihoonui-MacBook-Pro:MEAN jaceyoon$ cd ..
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ cd Ruby
+Jihoonui-MacBook-Pro:Ruby jaceyoon$ touch about.txt
+Jihoonui-MacBook-Pro:Ruby jaceyoon$ cd ..
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ cd iOS
+Jihoonui-MacBook-Pro:iOS jaceyoon$ touch about.txt
+Jihoonui-MacBook-Pro:iOS jaceyoon$ cd ..
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ cd netCore
+Jihoonui-MacBook-Pro:netCore jaceyoon$ touch about.txt
+Jihoonui-MacBook-Pro:netCore jaceyoon$ cd ..
+Jihoonui-MacBook-Pro:Dojoassignments jaceyoon$ cd WebFundamentals
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ mkdir Git
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ mkdir HTML
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ mkdir CSS
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ mkdir Javascript
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ ls
+CSS		Git		HTML		Javascript	about.txt
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ cd CSS
+Jihoonui-MacBook-Pro:CSS jaceyoon$ touch about.txt
+Jihoonui-MacBook-Pro:CSS jaceyoon$ cd ..
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ cd Git
+Jihoonui-MacBook-Pro:Git jaceyoon$ touch about.txt
+Jihoonui-MacBook-Pro:Git jaceyoon$ cd ..
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ cd HTML
+Jihoonui-MacBook-Pro:HTML jaceyoon$ touch about.txt
+Jihoonui-MacBook-Pro:HTML jaceyoon$ cd ..
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ cd Javascript
+Jihoonui-MacBook-Pro:Javascript jaceyoon$ touch about.txt
+Jihoonui-MacBook-Pro:Javascript jaceyoon$ cd ..
+Jihoonui-MacBook-Pro:WebFundamentals jaceyoon$ cd HTML
+Jihoonui-MacBook-Pro:HTML jaceyoon$ touch indentation.html
+Jihoonui-MacBook-Pro:HTML jaceyoon$ ls
+about.txt		indentation.html
+Jihoonui-MacBook-Pro:HTML jaceyoon$ -r
+-bash: -r: command not found
+Jihoonui-MacBook-Pro:HTML jaceyoon$ -R
+-bash: -R: command not found
+Jihoonui-MacBook-Pro:HTML jaceyoon$ ls -R
+about.txt		indentation.html
+Jihoonui-MacBook-Pro:HTML jaceyoon$ 
