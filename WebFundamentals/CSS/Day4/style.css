@@ -1,0 +1,311 @@
+/**
+{
+  outline: 1px dotted red;
+}*/
+.top
+{
+  width:1000px;
+}
+.top img
+{
+  display: inline-block;
+  margin-bottom: -70px;
+  width:95px;
+  height:95px;
+}
+.top span
+{
+  color:blue;
+}
+.top h1
+{
+  display: inline-block;
+  font-size: 50px;
+  vertical-align: top;
+  margin-bottom:0px;
+  margin-top:20px;
+}
+.navi
+{
+  background-color: #3b529a;
+  width:1000px;
+  height: 60px;
+  margin-top:-20px;
+}
+.navi h1
+{
+  margin-top: 15px;
+  color:white;
+  margin-left:20px;
+  margin-bottom:0px;
+  padding-bottom:0px;
+  padding-top:10px;
+}
+.background
+{
+  background-color: ivory;
+  width:1000px;
+  height:850px;
+}
+.left
+{
+  width:200px;
+  display:inline-block;
+}
+.left h3
+{
+  margin-left: 5px;
+  padding-top:20px;
+}
+.leftspan1
+{
+  color:blue;
+}
+#lefth3
+{
+  color:red;
+}
+.left p
+{
+  margin-left: 5px;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+#button1
+{
+  font-size: 17px;
+  width:180px;
+  height: 30px;
+  color:white;
+  background-color: #3b529a;
+  border-radius: 5px;
+  margin-left: 7px;
+}
+#button2
+{
+  font-size: 17px;
+  width:180px;
+  height: 30px;
+  color:white;
+  background-color: orange;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 7px;
+}
+#space
+{
+  padding-top: 0px;
+  border-bottom: 2px solid grey;
+}
+.background2
+{
+  background-image: url("file:///Users/jaceyoon/Desktop/Coding/CSS/Day4/images/ad_background.png");
+  height: 340px;
+  text-align: center;
+  margin-top:20px;
+}
+.background2 a
+{
+  color:white;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+}
+#test
+{
+  color:white;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+#test p
+{
+  padding-bottom: 0px;
+}
+#ninja
+{
+  width:40%;
+  height:30%;
+}
+#first
+{
+  color:darkgrey;
+}
+#second
+{
+  color:grey;
+}
+#third
+{
+  color:white;
+}
+.right1 img
+{
+  width:10%;
+  height:10%;
+}
+.background2 img
+{
+  margin-left: 10px;
+  margin-top:5px;
+}
+.background2 span
+{
+  font-size: 2px;
+}
+#button3
+{
+  font-size: 15px;
+  width:150px;
+  height: 30px;
+  color:white;
+  background-color: lightblue;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.right
+{
+  height: 730px;
+  width: 755px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 40px;
+}
+.right1
+{
+  display: inline-block;
+  padding-top:10px;
+}
+.right2
+{
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width:450px;
+}
+.right2 p
+{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+#mon
+{
+  font-size: 10px;
+  margin-right:20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+#phone2
+{
+  width:11%;
+  height:11%;
+}
+.right2 img
+{
+  display: inline-block;
+  margin-top:0px;
+  margin-left: 150px;
+  padding-top: 0px;
+  padding-right: 20px;
+  margin-bottom: -20px;
+}
+#phone
+{
+  font-size: 25px;
+  color:lightblue;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-right: 20px;
+}
+.rightblue
+{
+  color:#76c6d1
+}
+.bolder
+{
+  font-weight:bolder;
+}
+#inter
+{
+  font-size: 10px;
+  margin-right:20px;
+  display: inline-block;
+  vertical-align: top;
+}
+#space2
+{
+  width:730px;
+  border-bottom: 1px solid black;
+}
+.right3
+{
+  display: inline-block;
+  vertical-align: top;
+}
+.subtitle1
+{
+  margin-top:10px;
+  color:#548bb7;
+}
+.right3
+{
+  display: inline-block;
+  vertical-align: top;
+  width: 730px;
+}
+.right3 h2, .right p
+{
+  margin-bottom: 4px;
+}
+.right3 ul li
+{
+  width: 650px;
+  margin-left: 60px;
+}
+.right3 img
+{
+  margin-left: 200px;
+  margin-top:10px;
+}
+#number
+{
+  list-style-type:decimal;
+}
+#number li
+{
+  margin-top:8px;
+}
+.right4
+{
+  width: 740px;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #0087dd;
+  border-left: 4px solid #0087dd;
+  border-right: 4px solid #0087dd;
+}
+.right4 img
+{
+  margin-left: 20px;
+  margin-top:20px;
+  display: inline-block;
+  height:15%;
+  width:15%;
+}
+
+.subtitle2
+{
+  margin-top: 20px;
+  color: #739cbf;
+  margin-bottom: 10px;
+
+}
+.right4-2
+{
+  display: inline-block;
+  vertical-align: top;
+  width: 570px;
+  margin-left: 20px;
+}

@@ -1,0 +1,309 @@
+*
+{
+  outline: 1px dotted red;
+}
+#background
+{
+  width: 700px;
+  height: 1000px;
+}
+.navi
+{
+  width:700px;
+  height: 50px;
+  padding-bottom: 15px;
+  position:relative;
+}
+.navi ul
+{
+  list-style-type: none;
+  overflow: hidden;
+  text-align: center;
+  position: fixed;
+  padding-left: 55px;
+
+}
+.navi li
+{
+  background-color: #ededed;
+  float: left;
+  display: inline;
+  text-align: center;
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  font-weight: bold;
+  font-size: 12px;
+}
+.rest
+{
+  padding-top:12px;
+  padding-bottom:11px;
+  padding-left:12px;
+  padding-right:12px;
+}
+.rest a
+{
+  text-decoration: none;
+  color: black;
+}
+.icon1
+{
+  margin-bottom: -10px;
+}
+.search
+{
+  padding-right:17px;
+  padding-left: 73px;
+  padding-top: 9px;
+  padding-bottom:9px;
+  border-right: 1px solid grey;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.search input
+{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-bottom: 2px;
+  display: inline;
+  float: left;
+}
+.search img
+{
+  display: inline;
+  float: left;
+}
+.bodytop
+{
+  margin-top: 10px;
+  margin-left: 55px;
+}
+.bodytop ul
+{
+  list-style-type: none;
+  overflow: hidden;
+  text-align: center;
+  position: fixed;
+  padding-left: 0px;
+  padding-top: 0px;
+  margin-top: -6px;
+  position:relative;
+}
+.body img
+{
+  padding-bottom: 0px;
+  margin-bottom:0px;
+}
+.bodytop li
+{
+  background-color: #494748;
+  float: left;
+  display: inline;
+  text-align: center;
+}
+.navi2
+{
+  border-right: 1px solid grey;
+  padding-right: 15px;
+  padding-left: 12px;
+  padding-top:3px;
+  padding-bottom: 3px;
+}
+#leftra
+{
+  border-bottom-left-radius: 5px;
+}
+.rest2
+{
+  padding-right: 151px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left:10px;
+  border-bottom-right-radius: 5px;
+}
+.navi2 span
+{
+  color:white;
+}
+.bodytop ul li
+{
+  color:#5cabe4;
+  font-size: 10px;
+}
+.bottom
+{
+  width:592px;
+  height: 370px;
+  margin-top: 25px;
+  margin-left: 55px;
+  border: 1px solid grey;
+  background-color: #f4f7f6;
+}
+#buttonspace
+{
+  margin-right: 40px;
+}
+.bottom1 h2
+{
+  display: inline-block;
+  width: 380px;
+  color: #cccccc;
+  border-right: 1px solid grey;
+  padding-left: 13px;
+  font-weight:lighter;
+}
+.bottom1 button
+{
+  color: #cccccc;
+  background-color: #5390bc;
+  display: inline-block;
+  vertical-align: top;
+  width: 170px;
+  height: 30px;
+  border-radius: 7px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.bottom2
+{
+  width: 592px;
+  height: 250px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.content1
+{
+  width:138px;
+  display: inline-block;
+  padding-left: 13px;
+  margin-top: 20px;
+  border-right: 1px solid grey;
+  margin-bottom: 20px;
+}
+.text
+{
+  font-size: 5px;
+  font-family: sans-serif;
+  width:135px;
+}
+.bottom2 button
+{
+  width:130px;
+  color: white;
+  background-color: #5cabe4;
+  border-radius: 5px;
+}
+.content2
+{
+  width:138px;
+  display: inline-block;
+  padding-left: 3px;
+  margin-top: 20px;
+  border-right: 1px solid grey;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+.content3
+{
+  width:138px;
+  display: inline-block;
+  padding-left: 3px;
+  margin-top: 20px;
+  border-right: 1px solid grey;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+.content4
+{
+  width:138px;
+  display: inline-block;
+  padding-left: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+.icons img
+{
+  display: inline-block;
+}
+.subtitle
+{
+  font-size: 13px;
+  margin-top: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.space2
+{
+  width:595px;
+  height: 120px;
+}
+.tour
+{
+  margin-top:4px;
+}
+.product
+{
+  margin-top:4px;
+}
+.last table
+{
+  margin-left: 55px;
+}
+.firstone th
+{
+  padding-right: 56px;
+  font-size: 11px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+.table2
+{
+  margin-top: 10px;
+}
+.secondone a
+{
+  text-decoration: none;
+  color:black;
+  font-weight: lighter;
+}
+.secondone
+{
+  font-size: 3px;
+}
+.secondone td
+{
+  padding-top: 7px;
+}
+.last table
+{
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+.contact
+{
+  font-size: 3px;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+.contact p
+{
+  display: inline;
+  vertical-align: top;
+  color: grey;
+  padding-right: 10px;
+}
+.a
+{
+  border-right: 1px solid grey;
+}
+.b
+{
+  border-right: 1px solid grey;
+  padding-left: 10px;
+}
+.c
+{
+  padding-left: 10px;
+}

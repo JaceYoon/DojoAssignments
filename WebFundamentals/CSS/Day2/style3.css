@@ -1,0 +1,117 @@
+
+/**
+{
+  outline: 1px dotted red;
+}*/
+#background
+{
+  width:1350px;
+  height:1000px;
+  background-color:rgb(18,53,91);
+  padding:30px;
+}
+.top
+{
+  width:1350px;
+  height:80px;
+  background-color:rgb(215,38,56); /* this color is red */
+  border-radius:10px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+h1
+{
+  color:white;
+  font-family:serif;
+  display: inline-block;
+  margin-left: 40px;
+}
+.left h4
+{
+  margin-top:0px;
+  margin-left:10px;
+  padding-top: 20px;
+  color:white;
+  margin-bottom:0px;
+}
+a
+{
+  color: aquamarine;
+  font-family: serif;
+
+}
+.left ul
+{
+  padding-left:30px;
+  margin:0px;
+  color:aquamarine;
+}
+.left li
+{
+  margin:0px;
+}
+.right li
+{
+  color:white;
+  font-style: italic;
+}
+.blue
+{
+  color:blue;
+}
+.left
+{
+  width:230px;
+  height:240px;
+  background-color:rgb(8,126,139);
+  border-radius:20px;
+  display: inline-block;
+}
+.right h2
+{
+  color:white;
+  font-family: serif;
+  margin-left:10px;
+}
+.right p
+{
+  color:white;
+  margin-left:10px;
+  font-family: serif;
+  padding-right: 2px;
+}
+.right ul
+{
+  font-family: serif;
+  padding-right:2px;
+}
+.right li
+{
+  font-family: serif;
+  padding-right: 2px;
+}
+.right
+{
+  width:1095px;
+  height:500px;
+  background-color:rgb(12,24,33);
+  border-radius:20px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left:20px;
+}
+.bottom p
+{
+  color:white;
+  display: inline-block;
+  margin-left: 10px;
+  font-family: serif;
+}
+.bottom
+{
+  width:1350px;
+  height: 50px;
+  background-color: rgb(92,102,114);
+  border-radius:10px;
+  margin-top: 20px;
+}

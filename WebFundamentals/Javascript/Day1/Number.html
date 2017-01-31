@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    var newarry = [];
+    function Numbersonly(arr)
+    {
+      for(var i = 0; i < arr.length; i++)
+        {
+            if(typeof arr[i] === "number")
+           {
+               newarry.push(arr[i]);
+           }
+        }
+        console.log(newarry);
+    }
+    arr = [1,7,"orange","purple",5];
+    Numbersonly(arr);
+
+    //bonus
+    function Numbersonly(arr)
+    {
+      for(var i = 0; i < arr.length; i++)
+        {
+            if(typeof arr[i] !== "number")
+           {
+               arr.splice(i,1);
+               i--;
+           }
+        }
+        console.log(arr);
+    }
+    arr = [1,"string",7,"orange","purple",5,"red",15];
+    Numbersonly(arr);
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
