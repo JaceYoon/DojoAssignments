@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>jQueryFutions</title>
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $("#open").click(function(){
+      $("#body").show("slow");
+      $("#close").show("fast");
+    });
+    $("#start").click(function(){
+      $("#open").show();
+      $("#close").show();
+    });
+    $("#close").click(function(){
+      $("#body").hide("fast");
+    });
+    $("#name").click(function(){
+      $(".nameis").toggle("slow")
+    });
+    $("#img").click(function(){
+      if($("#eevee1").is(":hidden"))
+      {
+      $("#eevee1").slideDown("fast")
+      }
+      else{
+        $("#eevee1").hide();
+      }
+    });
+    $("#img2").click(function(){
+      if($("#eevee2").is(":hidden"))
+      {
+        $("#eevee2").show("fast")
+      }
+      else{
+        $("#eevee2").slideUp();
+      }
+    });
+    $("#text1").click(function(){
+      $("#pizza").slideToggle();
+    });
+    $("#donate").click(function(){
+      $(".donation").fadeIn();
+    });
+    $("#no").click(function(){
+      $(".donation").fadeOut();
+    });
+    $("a").last().addClass("hightlight")
+    $("h6").before("Because");
+    $("h5").after("IceCream");
+    $("b").append( "<strong>Hi</strong>");
+    $(".code").html( "<h8> Hello there </h8>");
+    var title = $("em").attr("title");
+    $(".titles").text(title);
+    $(".choose").click(function(){
+      var text = $(this).text();
+      $("#result").val(text);
+    });
+    $(".data").data("list", { first : "pizza", last : "bean" });
+    $("h2:first").text($(".data").data("list").first);
+    $("h2:last").text($(".data").data("list").last);
+  });
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1> Welcome to my jQuery Project! </h1>
+        <button id="start" type="button" name"start"> Start Here</button>
+        <br>
+        <button id="open" type="button" name="open">Open</button>
+        <button id="close" type="button" name="close">Close</button>
+      </div>
+      <div id="body">
+        <button id="name" type="button">Show my name</button>
+        <p class="nameis"> My name is ?</p>
+        <p class="nameis" style="display:none"> Jace </p>
+        <button id="img" type="button">Want see Eevee?</button>
+        <img class="eevee" id="eevee1" src="Eevee1.jpg" alt="">
+        <button id="img2" type="button">Want see her more?</button>
+        <img class="eevee" id="eevee2" src="Eevee2.jpg" alt="">
+        <button id="text1" type="button">Pizza?</button>
+        <img id="pizza" src="pizza.jpg" alt="">
+        <p id="donate">Click here for Donation</p>
+        <img class="donation" src="donate.jpg">
+        <h3 class="donation">Thank you for Donation $10,000,000!<h3>
+        <h4 class="donation" id="no">You want cancel? click here</h4>
+        <a>DONT</a>
+        <a>CLICK</a>
+        <a>THIS!!</a>
+        <div id="body2">
+          <h6>it's nothing there</h6>
+          <h5>I love ..</h5>
+        </div>
+        <div id="body3">
+          <b>I want to say..</b>
+        </div>
+        <p class="code"></p>
+        <p class="nameis"><em title="thisistitlename">TITLE</em></p>
+        <div class="titles">
+        </div>
+        <button class="choose">Black</button>
+        <button class="choose">Yellow</button>
+        <button class="choose">Blue</button>
+        <input id="result" type="text" name="" value="What color do you like?">
+        <div class="data">
+          I like :
+          <h2></h2>
+          I hate :
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

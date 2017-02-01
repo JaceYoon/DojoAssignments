@@ -1,0 +1,90 @@
+#wrapper
+{
+  width:700px;
+  height: 800px;
+  border: 3px solid black;
+}
+#header
+{
+  background-color: #c1c1c1;
+  width: 700px;
+  height: 120px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+#header h1
+{
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+#header button
+{
+  font-size: 16px;
+  margin-left: 220px;
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  background-color: black;
+  color:white;
+}
+#body
+{
+  display: none;
+}
+#header #open
+{
+  margin-left: 0px;
+  padding-left: 0px;
+  display: none;
+}
+#header #close
+{
+  margin-left: 0px;
+  padding-left:0px;
+  display: none;
+}
+#body #name
+{
+  display: inline-block;
+}
+#body #myname
+{
+  display: none;
+  display: inline-block;
+  vertical-align: top;
+}
+#body .eevee
+{
+  display: none;
+  width: 40%;
+  height: 40%;
+}
+#body #pizza
+{
+  display: none;
+  width:40%;
+  height:40%;
+}
+.donation
+{
+  display:none;
+  width:50%;
+  height:50%;
+}
+#body #donate
+{
+  display: inline-block;
+  background-color: black;
+  color:white;
+  font-size: 15px;
+}
+.hightlight
+{
+  color:red;
+  background:yellow;
+}
+.code
+{
+  text-decoration: underline;
+}

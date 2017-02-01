@@ -1,0 +1,14 @@
+.cat
+{
+  display: block;
+
+  margin-bottom: 5px;
+  margin-left:200px;
+}
+.ninja
+{
+  display: block;
+  margin-bottom: 5px;
+  margin-left:200px;
+  display: none;
+}

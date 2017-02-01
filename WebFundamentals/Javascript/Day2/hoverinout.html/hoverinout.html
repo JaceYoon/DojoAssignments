@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hover In and Out</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("img").hover(function(){
+          var $this=$(this);
+          var origin= $this.attr("src");
+          var change= $this.attr("alt-src");
+          $this.attr("src",change);
+          $this.attr("alt-src",origin);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img src="Eevee1.jpg" alt-src="Eevee2.jpg">
+    <img src="Eevee1.jpg" alt-src="Eevee2.jpg">
+    <img src="Eevee1.jpg" alt-src="Eevee2.jpg">
+    <img src="Eevee1.jpg" alt-src="Eevee2.jpg">
+    <img src="Eevee1.jpg" alt-src="Eevee2.jpg">
+    <img src="Eevee1.jpg" alt-src="Eevee2.jpg">
+    <img src="Eevee1.jpg" alt-src="Eevee2.jpg">
+    <img src="Eevee1.jpg" alt-src="Eevee2.jpg">
+
+  </body>
+</html>
