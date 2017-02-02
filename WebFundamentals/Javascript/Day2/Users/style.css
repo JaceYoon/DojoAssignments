@@ -1,0 +1,47 @@
+/**
+{
+  outline: 1px dotted red;
+}*/
+.head
+{
+  border: 2px solid black;
+  width: 540px;
+}
+#top th
+{
+  margin-left: 0px;
+  padding-right:50px;
+  font-family: sans-serif;
+}
+.body
+{
+  width:540px;
+}
+.body1
+{
+  width:390px;
+  height: 32px;
+  border-bottom: 2px solid grey;
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+.body2
+{
+  text-align: center;
+}
+.body2 input
+{
+  width: 150px;
+}
+#email
+{
+  margin-left: -22px;
+}
+#phone
+{
+  margin-left: -5px;
+}
+.bottom input
+{
+  margin-left: 320px;
+}

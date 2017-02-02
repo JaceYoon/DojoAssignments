@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function()
+    {
+      $("button").hover(
+        function(event){
+          event.stopPropagation();
+        var actions = $(this).attr("src");
+        $("#wrapper").css("background-image",actions);
+      });
+      $("button").click(function(){
+        var actions = $(this).attr("src");
+        $("#wrapper").css("background-image",actions);
+        $("#firstpage").hide();
+        $("#game").show();
+      });
+      $("select").change(function(){
+        var id = $(this);
+        var player = $(this).val();
+        var left = $("#jace");
+        var right = $("#sera");
+          if(id = left){
+            $("#players1 img").hide();
+          }
+          else{
+            $("#players2 img").hide();
+          }
+          $("#"+player).show();
+      });
+    });
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="menu_box">
+        <div id="firstpage">
+          <h2 id="arena">Select Arena</h2>
+            <div id="buttons">
+              <button class="button" src="url(https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/beach.jpg)" type="button" name="button">beach</button>
+              <button class="button" src="url(https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/earth.jpg)" type="button" name="button">planet</button>
+              <button src="url(https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/dojo.jpg)" class="button" type="button" name="button">dojo</button>
+              <button src="url(https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/forest.jpg)" class="button" type="button" name="button">forest</button>
+              <button src="url(https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/matrix.jpg)"class="button" type="button" name="button">matrix</button>
+              <button src="url(https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/snow.jpg)"class="button" type="button" name="button">snow</button>
+            </div>
+          </div>
+          <div id="game">
+            <h2 id="play">Select Player</h2>
+            <select id="jace" name="">
+              <option selected="selected">Select Ninja</option>
+              <option value="donny1">Donny</option>
+              <option value="leo1">Leo</option>
+              <option value="mikey1">Mikey</option>
+              <option value="raphael1">Raphael</option>
+            </select>
+            <select id="sera" name="">
+              <option selected="selected">Select Ninja</option>
+              <option value="donny2">Donny</option>
+              <option value="leo2">Leo</option>
+              <option value="mikey2">Mikey</option>
+              <option value="raphael2">Raphael</option>
+            </select>
+            <div id="players1">
+              <img id="donny1" src="https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/donny.png" alt="">
+              <img id="leo1" src="https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/leo.png" alt="">
+              <img id="mikey1" src="https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/mikey.png" alt="">
+              <img id="raphael1" src="https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/raphael.png" alt="">
+            </div>
+            <div id="players2">
+              <img id="donny2" src="https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/donny.png" alt="">
+              <img id="leo2" src="https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/leo.png" alt="">
+              <img id="mikey2" src="https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/mikey.png" alt="">
+              <img id="raphael2" src="https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/raphael.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
