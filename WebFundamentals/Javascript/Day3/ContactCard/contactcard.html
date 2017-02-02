@@ -7,17 +7,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
     </script>
     <script type="text/javascript">
+        "use strict";
       $(document).ready(function(){
-        $("#submit").click(function(event){
-          event.stopPropagation();
+        $("#text").submit(function(){
           var firstname = $("#fname").val();
           var lastname = $("#lname").val();
           var description = $("#description").val();
-          var showvalue = "<p>" + firstname + " "+ lastname + "</p>"+"<p class="clickhere">click description</p>";
-            $("#body2 div").append(showvalue);
-            $(document).on(function(click,".clickhere"){
-
+          var showvalue = "<div class='newline'><h3>" + firstname + " " + lastname + "</h3><h4 >click description</h4><p>" + description + "</p></div>";
+            $("#body2").append(showvalue);
+            $("#text").each(function(){
+              this.reset();
             });
+            return false;
+          });
+        $("#body2").on("click",".newline", function(){
+          $(this).children().toggle();
         });
       });
     </script>
@@ -29,6 +33,7 @@
       </div>
       <div id="body">
         <div id="body1">
+          <form id="text">
           <label for="fname">First name: <input id="fname"type="text" name="fname">
           </label>
           <br>
@@ -41,14 +46,14 @@
           <label for"description">Description :</label>
           <br>
           <br>
-          <input id="description" type="text" name="description" placeholder="Enter description">
+          <textarea id="description" type="text" placeholder="Enter description"></textarea>
           <br>
           <br>
-          <button id="submit" type="submit" name="submit"> Add User </button>
+          <input id="submit" type="submit" name="submit" value="Add User">
+        </form>
         </div>
         <div id="body2">
-          <div>
-          </div>
+
         </div>
       </div>
 
