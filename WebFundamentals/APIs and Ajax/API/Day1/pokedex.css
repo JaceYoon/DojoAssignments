@@ -1,0 +1,35 @@
+.wrapper
+{
+  width:1000px;
+
+}
+.pokemonimg
+{
+  width:750px;
+
+  display: inline-block;
+}
+.pokedex
+{
+  width:200px;
+  height: 500px;
+  border: 30px solid red;
+  display: inline-block;
+  vertical-align: top;
+  position:fixed;
+  text-align: center;
+}
+.pokedex ul li
+{
+  text-align: left;
+}
+.pokedex h4
+{
+  text-align: left;
+  margin-left:5px;
+}
+.pokedex h5
+{
+  text-align: left;
+  margin-left:5px;
+}

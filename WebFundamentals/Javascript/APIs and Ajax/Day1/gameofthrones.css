@@ -1,0 +1,13 @@
+.header
+{
+  text-align: center;
+  width: 700px;
+  background-color: grey;
+  height: 40px;
+}
+.body img
+{
+  width: 30%;
+  height: 30%;
+  display: inline-block;
+}

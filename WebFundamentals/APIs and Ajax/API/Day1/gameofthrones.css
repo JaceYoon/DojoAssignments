@@ -1,0 +1,19 @@
+.header
+{
+  text-align: center;
+  width: 895px;
+  background-color: grey;
+  height: 80px;
+  margin-bottom:30px;
+}
+.body img
+{
+  height: 120px;
+  width: 220px;
+  display: inline-block;
+}
+.result
+{
+  width:895px;
+  text-align: center;
+}

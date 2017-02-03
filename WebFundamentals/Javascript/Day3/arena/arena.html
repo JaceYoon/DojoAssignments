@@ -21,11 +21,10 @@
         $("#game").show();
       });
       $("select").change(function(){
-        var id = $(this);
+        var id = $(this).val();
         var player = $(this).val();
-        var left = $("#jace");
-        var right = $("#sera");
-          if(id = left){
+
+          if(id[id.length - 1] == 1){
             $("#players1 img").hide();
           }
           else{
@@ -56,17 +55,17 @@
             <h2 id="play">Select Player</h2>
             <select id="jace" name="">
               <option selected="selected">Select Ninja</option>
-              <option value="donny1">Donny</option>
-              <option value="leo1">Leo</option>
-              <option value="mikey1">Mikey</option>
-              <option value="raphael1">Raphael</option>
+              <option value="donny1" class ="left">Donny</option>
+              <option value="leo1" class ="left">Leo</option>
+              <option value="mikey1"class ="left">Mikey</option>
+              <option value="raphael1"class ="left">Raphael</option>
             </select>
             <select id="sera" name="">
               <option selected="selected">Select Ninja</option>
-              <option value="donny2">Donny</option>
-              <option value="leo2">Leo</option>
-              <option value="mikey2">Mikey</option>
-              <option value="raphael2">Raphael</option>
+              <option value="donny2" class= "right">Donny</option>
+              <option value="leo2" class= "right">Leo</option>
+              <option value="mikey2" class= "right">Mikey</option>
+              <option value="raphael2" class= "right">Raphael</option>
             </select>
             <div id="players1">
               <img id="donny1" src="https://raw.githubusercontent.com/donotruck21/dojo_arena_photos/master/donny.png" alt="">
