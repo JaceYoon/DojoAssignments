@@ -6,8 +6,19 @@
     <link rel="stylesheet" href="gameofthrones.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript">
+      $(document).on('click','img',function(){
+        var text = $(this).attr("id");
+        $.get("http://anapioficeandfire.com/api/houses/" + text, function(res){
+          console.log(res);
+          var house = ""
+          house += "<h2> Name: </h2>" + "<h2>" + res.name + "</h2>";
+          house += "<h3> Words: </h3>" + res.words;
+          house += "<h3> Name: </h3>" + res.name;
+          house += "<h3> Titles: </h3>" + res.titles;
+          $(".result").html(house);
+        },"json");
+      });
       $(document).ready(function(){
-
       });
     </script>
   </head>
@@ -17,11 +28,14 @@
         <h3> Game of Thrones </h3>
       </div>
       <div class="body">
-        <img src="stark.jpg" alt="">
-        <img src="targaryen.jpg" alt="">
-        <img src="lannister.jpg" alt="">
-        <img src="baratheon.png" alt="">
+        <img id="362" src="stark.jpg" alt="">
+        <img id="378" src="targaryen.jpg" alt="">
+        <img id="229" src="lannister.jpg" alt="">
+        <img id="16" src="baratheon.png" alt="">
       </div>
+    </div>
+    <div class="result">
+
     </div>
   </body>
 </html>
