@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="weather.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function()
+      {
+        $('form').submit(function() {
+          var value = $("#search").val();
+          // $.get("http://api.openweathermap.org/data/2.5/weather?q=" + value + ",us&appid=c92362b6c98f48861c1511feff3f7f9e" , function(res){
+          $.get("http://api.openweathermap.org/data/2.5/weather?q=" + value + "&units=imperial&APPID=c92362b6c98f48861c1511feff3f7f9e" , function(res){
+            console.log(res);
+            var tem = "";
+            tem += "<h1>" + res.name + "</h1>";
+            tem += "Temperature : " + res.main.temp;
+            $(".result").html(tem);
+          }, 'json');
+
+          return false;
+
+      });
+    });
+</script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form>
+          <input id="search" type="text" name="" value="">
+          <input id="submit" type="submit" name="" value="Search Weather">
+        </form>
+      </div>
+      <div class="result">
+
+      </div>
+    </div>
+  </body>
+</html>
