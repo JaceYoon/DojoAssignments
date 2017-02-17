@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="">
+      <p>Thanks for submitting this form! You have submitted this from {{request.session.count}} times now.</p>
+    </div>
+    <div class="">
+      {% csrf_token %}
+      <h3>Submitted Information</h3>
+      <p>Name :</p>
+      <p>{{request.session.name}}</p>
+      <p>Dojo Location :</p>
+      <p>{{request.session.location}}</p>
+      <p>Favorite language :</p>
+      <p>{{request.session.language}}</p>
+      <p>comment</p>
+      <p>{{request.session.comment}}</p>
+    </div>
+  </body>
+</html>

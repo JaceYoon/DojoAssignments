@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type='text/css' href="{{url_for("static", filename="ninja_style.css")}}">
+  </head>
+  <body>
+    <div id="body">
+      <div id="header">
+      Your Gold: <input type="text" name="gold" value="">
+      </div>
+      <div class="farm">
+        <h2> Farm </h2>
+        <p> (earns 10-20 golds)</p>
+        <br>
+        <form action="/process_money" method="post">
+          <button type="submit" name="farm">Find Gold!</button>
+        </form>
+      </div>
+      <div class="cave">
+        <h2> Cave </h2>
+        <p> (earns 5-10 golds)</p>
+        <br>
+        <form action="/process_money" method="post">
+          <button type="submit" name="cave">Find Gold!</button>
+        </form>
+      </div>
+      <div class="house">
+        <h2> House </h2>
+        <p> (earns 2-5 golds)</p>
+        <br>
+        <form action="/process_money" method="post">
+          <button type="submit" name="house">Find Gold!</button>
+        </form>
+      </div>
+      <div class="casino">
+        <h2> Casino </h2>
+        <p> (earns/takes 0-50 golds)</p>
+        <br>
+        <form action="/process_money" method="post">
+          <button type="submit" name="casino">Find Gold!</button>
+        </form>
+      </div>
+      <br>
+      <br>
+      <div class="detail">
+        Activites:
+        <br>
+        <textarea id="text" name="activities">{% with messages = get_flashed_messages( )%}
+          {% if messages %}
+            {% for message in messages%}
+              <p>{{message}}</p>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}</textarea>
+      </div>
+    </div>
+  </body>
+</html>

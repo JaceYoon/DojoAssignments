@@ -1,0 +1,46 @@
+/**{
+  outline: 1px dotted red;
+}*/
+#header
+{
+  margin-bottom: 20px;
+}
+.farm
+{
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  margin-right:15px;
+  border: 1px solid black;
+}
+.cave
+{
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border: 1px solid black;
+  margin-right:15px;
+}
+.house
+{
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border: 1px solid black;
+  margin-right:15px;
+}
+.casino
+{
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border: 1px solid black;
+}
+#text
+{
+  width:860px;
+  height: 100px;
+}

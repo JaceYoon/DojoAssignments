@@ -3,9 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>counter</title>
+    <style media="screen">
+
+    h1,p,form{
+      text-align: center;
+    }
+      p{
+        font-size:15px;
+      }
+    </style>
   </head>
   <body>
     <h1>Counter</h1>
-    
+    <p>you visited {{ session["number"] }} times..</p>
+    <form action="/" method='post'>
+      <button  type="submit" name="button">Count +1!</button>
+    </form>
+    <form action ="/double" method="post">
+      <button action="/double" type="submit" name="button">Count +2!</button>
+    </form>
+    <form action="/reset" method="post">
+      <button action="/reset" type="submit" name="button"> Reset!</button>
+    </form>
   </body>
 </html>
