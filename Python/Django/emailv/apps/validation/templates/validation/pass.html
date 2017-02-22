@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'validaion/mail.css' %}">
+  </head>
+  <body>
+    <div class="pass">
+       {% if messages %}
+         {% for message in messages %}
+           <p>{{ message }}</p>
+         {% endfor %}
+       {% endif %}
+    </div>
+    <div class="">
+      <h3>Email Addresses Entered:</h3>
+      {% for email in email %}
+      <p>{{ email.email }} {{ email.created_at }}</p>
+      {% endfor %}
+    </div>
+  </body>
+</html>

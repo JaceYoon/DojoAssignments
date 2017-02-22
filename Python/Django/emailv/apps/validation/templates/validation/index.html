@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'validaion/mail.css' %}">
+  </head>
+  <body>
+    <div class="fail">
+      {% if messages %}
+      {% for msg in messages %}
+      {{msg}}
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="">
+      <form class="" action="/go" method="post">
+        {% csrf_token %}
+        <label for="email">Email Address</label>
+        <input type="text" name="email">
+        <button type="submit" name="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

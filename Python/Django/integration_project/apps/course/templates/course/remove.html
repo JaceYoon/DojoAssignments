@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h2>Are you sure you want to delete the following course?</h2>
+    <p>Name :  {{name.name}}</p>
+    <p>Description: {{name.description}}</p>
+
+    <form class="" action="/course">
+      {% csrf_token %}
+      <button type="submit" name="submit">No</button>
+    </form>
+    <form action="{% url 'course:confirm' id=name.id %}">
+      {% csrf_token %}
+      <button type="submit" name="submit"> Yes I want to delete this</button>
+    </form>
+  </body>
+</html>

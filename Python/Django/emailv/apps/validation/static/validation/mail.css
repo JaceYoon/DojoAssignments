@@ -1,0 +1,15 @@
+*
+{
+  margin: 0px auto;
+}
+.fail
+{
+  border: 2px solid black;
+  color: white;
+  background-color: red;
+}
+.pass
+{
+  border: 2px solid black;
+  background-color: lightgreen;
+}
