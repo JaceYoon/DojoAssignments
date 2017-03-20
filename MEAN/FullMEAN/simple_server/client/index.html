@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app = 'app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Crazy Friends</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="assets/app.js"></script>
+    <script type="text/javascript" src="./assets/factories/friendsFactory.js"></script>
+    <script type="text/javascript" src="./assets/controllers/newController.js"></script>
+    <script type="text/javascript" src="./assets/controllers/editController.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <p><a style="text-decoration: underline;" href="#!/">Show Friends</a> | <a style="text-decoration: underline;" href="#!/new">Create Friends</a></p>
+    </div>
+
+    <div ng-view>
+
+    </div>
+  </body>
+</html>

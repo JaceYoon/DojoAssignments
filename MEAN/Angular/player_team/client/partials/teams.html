@@ -1,0 +1,47 @@
+<style media="screen">
+#head{
+  background-color: grey;
+  color:white;
+  border: 2px solid gold;
+  padding-right: 15px;
+}
+.show td{
+  padding-right:10px;
+  background-color: lightblue;
+  color:black;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid gold;
+}
+#add{
+  background-color: green;
+  color:white;
+}
+#remove{
+  background-color: purple;
+  color:white;
+  font-weight: 200;
+}
+</style>
+<div>
+  <div>
+    <h2>Teams Controller</h2>
+      <form ng-submit="add_team()">
+        Name<input type="text" ng-model="team.name">
+        <button id="add" type="submit" user="button" ng-click="">Create Team</button>
+      </form>
+      <br>
+      Filter : <input type="text" placeholder="Find Team" ng-model="TeamFilter">
+    <div>
+    <br>
+    <table>
+      <tr id="head">
+        <td ng-click="sortBy = 'first_name'; sortReverse = !sortReverse">Team Name</td>
+        <td>Actions</td>
+      </tr>
+      <tr class="show" ng-repeat="team in teams | filter:TeamFilter | orderBy:sortBy:sortReverse">
+        <td>{{team.name}}</td>
+        <td><button id="remove" type="submit" name="button" ng-click="remove_team($index)">Remove Team</button></td>
+      </tr>
+    </table>
+</div>

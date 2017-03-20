@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Hi {{request.session.name}}!</h2>
+    <a href="{% url 'belt:logout'%}"><button type="submit" name="logout">Logout</button></a>
+    <a href="{% url 'belt:add'%}">Add Item</a>
+
+    <div class="">
+      <h2>My WishList</h2>
+      <table>
+        <tr>
+        <td>Item</td>
+        <td>Added by</td>
+        <td>Date Added</td>
+        <td>Action</td>
+        </tr>
+        <br>
+          {% for item in items %}
+          <tr>
+            <td><a href="{% url 'belt:info' id=item.id%}">{{ item.itemname }}</a></td>
+            <td>{{ item.creator.name }}</td>
+            <td>{{ item.created_at }}</td>
+            <td>
+              {% if item.creator.id == request.session.id %}
+                <a href="{% url 'belt:delete' id=item.id%}">Delete</a>
+              {% else %}
+                <a href="{% url 'belt:deletelist' id=item.id%}">Remove from my Wishlist</a>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
+    </div>
+    <div class="">
+      <h2>Other User's Wishlist</h2>
+      <table>
+        <tr>
+        <td>Item</td>
+        <td>Added by</td>
+        <td>Date Added</td>
+        <td>Action</td>
+        </tr>
+        <br>
+          {% for item in otheritems %}
+          <tr>
+            <td><a href="{% url 'belt:info' id=item.id%}">{{ item.itemname }}</a></td>
+            <td>{{ item.creator.name }}</td>
+            <td>{{ item.created_at }}</td>
+            <td>
+              <a href="{% url 'belt:addwish' id=item.id%}">Add to my Wishilist</a>
+            </td>
+          {% endfor %}
+          </tr>
+        </table>
+    </div>
+  </body>
+</html>

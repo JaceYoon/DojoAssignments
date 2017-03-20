@@ -1,0 +1,17 @@
+<div class="container">
+  <table class="table table-bordered">
+    <tr>
+      <td>Name</td>
+      <td>Show</td>
+      <td>Update</td>
+      <td>Delete</td>
+    </tr>
+    <tr ng-repeat="friend in friends | filter:UserFilter | orderBy:sortBy:sortReverse">
+      <td>{{friend.first_name}} {{friend.last_name}}</td>
+      <td><button type="button" name="button">Show</button></td>
+      <td><button type="button" name="button">Update</button></td>
+      <td><button id="remove" type="submit" name="button" ng-click="remove_friend($index)">Remove Friend</button></td>
+    </tr>
+  </table>
+  <input type="text" ng-model="UserFilter" placeholder="Filter..">
+</div>

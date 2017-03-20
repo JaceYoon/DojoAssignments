@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <img src="images/Eevee1.jpg">
+    <br>
+    <a href="/new">Regi your dog</a>
+
+    <div class="">
+      <% if(dogs) { %>
+      <h4>Our Dog Family List!</h4>
+        <p><% for(var i = 0; i <dogs.length; i++) { %>
+          Name : <a href="/dog/<%= dogs[i]._id %>"><%= dogs[i].name %></a> |
+          Age : <%= dogs[i].age %> |
+          Color: <%= dogs[i].color %>
+          <a href="/<%= dogs[i]._id %>/edit"><button type="button" name="button">Edit</button></a>
+          <a href="/<%= dogs[i]._id %>/delete"><button type="button" name="button">Remove</button></a>
+          <br>
+          <% } %>
+        </p>
+      <% }%>
+    </div>
+  </body>
+</html>

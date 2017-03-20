@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #logout
+      {
+        color:white;
+        background-color: green;
+      }
+      .review{
+        border: 2px solid lightblue;
+        max-width: 500px;
+      }
+      #add
+      {
+        margin-left: 300px;
+        margin-right: 15px;
+      }
+      .rate
+      {
+        font-family: fantasy;
+        color:yellow;
+        background-color: black;
+        max-width: 95px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <h1>Welcome, {{request.session.fname}}</h1>
+      <a id = "add" href="{% url 'book:add'%}">add book and author</a>
+      <a href="{% url 'book:logout' %}"><button id="logout" type="submit" name="submit">Logout</button></a>
+    </div>
+    <h2>Recent Book Reviews:</h2>
+    <div class="review">
+      {% for book in books%}
+      <div class="">
+        <h2>Title :<a href="{% url 'book:review' %}">{{book.title}}</a></h3>
+          {% for user in users%}
+        <h3>Author : {{book.newauthor}}</h3>
+        <h3>Created by : <a href="{% url 'book:user' %}">{{user.first_name}}{{user.last_name}}{{user.id}}</a></h2>
+          {% endfor %}
+        <h3 class="rate">Rating : {{book.rating}}</h3>
+        <h4>Review : {{book.review}}</h4>
+        <br>
+        {% endfor %}
+    </div>
+  </body>
+</html>

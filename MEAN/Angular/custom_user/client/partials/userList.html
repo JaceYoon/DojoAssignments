@@ -1,0 +1,46 @@
+<style media="screen">
+#head{
+  background-color: grey;
+  color:white;
+  border: 2px solid gold;
+  padding-right: 15px;
+}
+.show td{
+  padding-right:10px;
+  background-color: lightblue;
+  color:black;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid gold;
+}
+#add{
+  background-color: green;
+  color:white;
+}
+#remove{
+  background-color: purple;
+  color:white;
+  font-weight: 200;
+}
+</style>
+
+<div>
+  <div>
+    <h2>User List</h2>
+
+      Filter : <input type="text" placeholder="Find User" ng-model="UserFilter">
+    <div>
+    <br>
+    <table>
+      <tr id="head">
+        <td ng-click="sortBy = 'first_name'; sortReverse = !sortReverse">First Name</td>
+        <td ng-click="sortBy = 'last_name'; sortReverse = !sortReverse">Last Name</td>
+        <td ng-click="sortBy = 'language'; sortReverse = !sortReverse">Favorite Language</td>
+      </tr>
+      <tr class="show" ng-repeat="user in users | filter:UserFilter | orderBy:sortBy:sortReverse">
+        <td>{{user.first_name}}</td>
+        <td>{{user.last_name}}</td>
+        <td>{{user.language}}</td>
+      </tr>
+    </table>
+</div>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #head{
+        background-color: grey;
+        color:white;
+        border: 2px solid gold;
+        padding-right: 15px;
+      }
+      .show td{
+        padding-right:10px;
+        background-color: lightblue;
+        color:black;
+        text-align: center;
+        font-weight: bold;
+        border: 2px solid gold;
+      }
+      #add{
+        background-color: green;
+        color:white;
+      }
+      #remove{
+        background-color: purple;
+        color:white;
+        font-weight: 200;
+      }
+      #order_table
+      {
+        margin-top: 35px;
+      }
+      #buyit{
+        background-color: black;
+        color:ivory;
+      }
+    </style>
+    <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="./controllers/product.js"></script>
+        <script type="text/javascript" src="./factories/product.js"></script>
+  </head>
+  <body>
+    <div ng-controller='productController'>
+      <form >
+        product name:<input type="text" ng-model='new_product.name'>
+        price: <input type="number" ng-model='new_product.price'>
+        <button id="add" type="submit" name="button" ng-click="add()">Add</button>
+      </form>
+      <br>
+    Search here : <input type="text" ng-model="product_filter" placeholder="filter..">
+    <br>
+      <div>
+        <br>
+        <h2>Product Controller</h2>
+        <table>
+          <tr id="head">
+            <td ng-click="sortBy = 'name'; sortReverse = !sortReverse">Name</td>
+            <td ng-click="sortBy = 'price'; sortReverse = !sortReverse">Price</td>
+            <td>Actions</td>
+          </tr>
+          <tr class="show" ng-repeat='product in products | filter:product_filter| orderBy:sortBy:sortReverse'>
+            <td>{{product.name}}</td>
+            <td>${{product.price}}</td>
+            <td><button id='remove' type="submit" name="button" ng-click="remove()">delete</button></td>
+          </tr>
+        </table>
+      </div>
+      <div class="Buy" ng-controller='orderController'>
+        <h2 id="order_table">Order Controller</h2>
+        <table>
+          <tr id="head">
+            <td ng-click="sortBy = 'name'; sortReverse = !sortReverse">Name</td>
+            <td ng-click="sortBy = 'price'; sortReverse = !sortReverse">Price</td>
+            <td ng-click="sortBy = 'quantity'; sortReverse = !sortReverse">Quantity</td>
+            <td>Actions</td>
+          </tr>
+          <tr class="show" ng-repeat='product in products | filter:product_filter| orderBy:sortBy:sortReverse'>
+            <td>{{product.name}}</td>
+            <td>${{product.price}}</td>
+            <td>{{product.quantity}}</td>
+            <td><button id='buyit' type="submit" name="button" ng-click="buy($index)">Buy</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

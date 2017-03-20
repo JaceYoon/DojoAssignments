@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Product</title>
+  </head>
+  <body>
+    <div class="">
+      {% for product in list %}
+      <h1>Edit Product {{product.id}}</h1>
+      <form action="{% url 'home:update' id=product.id %}" method="post">
+        {% csrf_token %}
+        <label for="name">Name</label>
+        <input type="text" name="name" value="" placeholder="{{product.name}}">
+        <br>
+        <label for="description">Description</label>
+        <input type="text" name="description" value="" placeholder="{{product.description}}">
+        <br>
+        <label for="price">Price</label>
+        <input type="number" name="price" value="" placeholder="${{product.price}}">
+        <br>
+        <button id="update" type="submit" name="button">Update</button>
+      </form>
+    </div>
+    <div class="">
+      <a href="{% url 'home:show' id=product.id %}">Show</a>
+      <a href="/product">Back</a>
+      {% endfor %}
+    </div>
+  </body>
+</html>

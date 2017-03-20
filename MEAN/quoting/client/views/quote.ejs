@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="">
+      <h2>Here are the awesome quotes!</h2>
+      <% if(que) {%>
+        <% for (var i=0; i<que.length; i++) {%>
+          <p>"<%= que[i].quote%>"</p>
+          <p>- <%= que[i].name%></p>
+          <p>____________________________________________</p>
+        <% } %>
+      <% }%>
+    </div>
+  </body>
+</html>

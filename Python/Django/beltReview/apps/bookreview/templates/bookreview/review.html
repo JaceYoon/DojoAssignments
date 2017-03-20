@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="{% url 'book:home' %}">Home</a>
+    <h2>Review</h2>
+    {% for book in books%}
+    <div class="">
+      <h2><a href="{% url 'book:review' %}"></a>{{book.title}}</h3>
+        {% for user in users%}
+        <h3>{{book.newauthor}}</h3>
+      <h3><a href="{% url 'book:user' %}">{{user.first_name}}{{user.last_name}}{{user.id}}</a></h2>
+        {% endfor %}
+      <h2>{{book.rating}}</h2>
+      <h4>{{book.review}}</h4>
+      <br>
+      {% endfor %}
+    </div>
+  </body>
+</html>

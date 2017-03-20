@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = 'app'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src='angular/angular.js' charest="utf-8"></script>
+    <script type="text/javascript" src='angular-route/angular-route.js' charest="utf-8"></script>
+
+    <script>
+    var app = angular.module('app', ['ngRoute'])
+
+    app.config(function ($routeProvider){
+      $routeProvider
+      .when('/',{
+        redirectTo:'/user'
+      })
+      .when('/user',{
+        templateUrl: 'partials/customizeUser.html',
+        controller: 'viewController'
+      })
+      .when('/list',{
+        templateUrl: 'partials/userList.html',
+        controller: 'view2Controller'
+      })
+      .otherwise({
+        redirectTo:'/'
+      })
+    })
+
+    app.controller('viewController', function($scope, userFactory,$location){
+      $scope.users = userFactory.users
+
+      $scope.add_user = function(){
+        userFactory.add($scope.user, function(){
+          console.log('im here')
+          $scope.users = userFactory.users
+        })
+        $scope.user = {}
+        $location.url('/list')
+      }
+
+      $scope.remove_user = function(id){
+        $scope.users.splice(id,1)
+      }
+    })
+
+    app.controller('view2Controller', function($scope, userFactory){
+      $scope.users = userFactory.users
+    })
+
+    app.factory('userFactory', function(){
+      var factory = {}
+      factory.users = []
+      factory.add = function(user,callback){
+        factory.users.push(user)
+        callback()
+      }
+      return factory
+    })
+    </script>
+  </head>
+  <body>
+    <h1>hello there</h1>
+    <h2><a href="#!/users">Customize Users</a></h2>
+    <h2><a href="#!/list">User List</a></h2>
+    <div ng-view>
+      <!-- Partials will load here! -->
+    </div>
+  </body>
+</html>

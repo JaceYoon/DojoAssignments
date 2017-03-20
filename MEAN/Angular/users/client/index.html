@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="./angular/angular.js"></script>
+    <script type="text/javascript">
+      var app = angular.module('app',[])
+
+      app.controller('UserController',['$scope', function($scope){
+          $scope.users = []
+          $scope.add_user = function(){
+          $scope.users.push({
+            first_name:$scope.student.first_name,
+            last_name:$scope.student.last_name,
+            language:$scope.student.new_language,
+            date:new Date()
+          })
+          $scope.student.first_name = ""
+          $scope.student.last_name = ""
+          $scope.student.new_language = ""
+        }
+        $scope.remove_user = function(idx){
+          var student_delete = $scope.users[idx]
+          $scope.users.splice($scope.users.indexOf(student_delete),1)
+        }
+      }])
+    </script>
+    <style media="screen">
+      .show td{
+        border: 1px solid black;
+        padding-right: 2px;
+      }
+      #head{
+        background-color: grey;
+        color: white;
+        padding-right: 3px;
+        border: 1px solid gold;
+      }
+      #date{
+        padding-right: 150px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body ng-controller="UserController">
+    <div>
+      <h2>Users Controller</h2>
+      <form ng-submit="add_user()">
+        First Name<input type="text" ng-model="student.first_name">
+        Last Name<input type="text" ng-model="student.last_name">
+        Favorite Name<input type="text" ng-model="student.new_language">
+        <button type="submit" user="button" ng-click="">Create User</button>
+      </form>
+      <br>
+      Filter : <input type="text" placeholder="Find User" ng-model="UserFilter">
+      <div>
+        <br>
+        <table>
+          <tr id="head">
+            <td ng-click="sortBy = 'name'; sortReverse = !sortReverse">First Name</td>
+            <td ng-click="sortBy = 'name'; sortReverse = !sortReverse">Last Name</td>
+            <td ng-click="sortBy = 'name'; sortReverse = !sortReverse" id="date">Date</td>
+            <td ng-click="sortBy = 'name'; sortReverse = !sortReverse">Fav Language</td>
+            <td>Actions</td>
+          </tr>
+          <tr class="show" ng-repeat="student in users | filter:UserFilter | orderBy:sortBy:sortReverse">
+            <td>{{student.first_name}}</td>
+            <td>{{student.last_name}}</td>
+            <td>{{student.date|date:'medium'}}</td>
+            <td>{{student.language}}</td>
+            <td><button type="submit" name="button" ng-click="remove_user()">delete</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+        <p ng-repeat="food in foods | filter:foodFilter track by $index"> {{food}} </p>

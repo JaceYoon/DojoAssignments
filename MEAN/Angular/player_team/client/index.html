@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = 'app'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src='angular/angular.js' charest="utf-8"></script>
+    <script type="text/javascript" src='angular-route/angular-route.js' charest="utf-8"></script>
+
+    <script>
+    var app = angular.module('app', ['ngRoute'])
+
+    app.config(function ($routeProvider){
+      $routeProvider
+      .when('/',{
+        redirectTo:'/player'
+      })
+      .when('/player',{
+        templateUrl: 'partials/players.html',
+        controller: 'PlayerController'
+      })
+      .when('/team',{
+        templateUrl: 'partials/teams.html',
+        controller: 'TeamController'
+      })
+      .when('/association',{
+        templateUrl: 'partials/associations.html',
+        controller: 'AssociationController'
+      })
+      .otherwise({
+        redirectTo:'/'
+      })
+    })
+
+    app.controller('PlayerController', function($scope, userFactory, $location){
+      $scope.users = userFactory.users
+      console.log($location)
+      $scope.add_user = function(){
+        userFactory.add($scope.user, function(){
+          $scope.users = userFactory.users
+
+        })
+        $scope.user = {}
+      }
+
+      $scope.remove_user = function(id){
+        $scope.users.splice(id,1)
+      }
+    })
+
+    app.controller('TeamController', function($scope, TeamFactory, $location){
+      $scope.teams = TeamFactory.teams
+
+      $scope.add_team = function(){
+        TeamFactory.add($scope.team, function(){
+          $scope.teams = TeamFactory.teams
+        })
+        $scope.team = {}
+      }
+
+      $scope.remove_team = function(id){
+        $scope.teams.splice(id,1)
+      }
+    })
+
+    app.controller('AssociationController', function($scope, userFactory,TeamFactory, PTFactory, $location){
+      $scope.users = userFactory.users
+      $scope.teams = TeamFactory.teams
+      $scope.associations = PTFactory.associations
+
+      $scope.add_association = function(){
+        PTFactory.add($scope.user,$scope.team, function(){
+          $scope.users = userFactory.users
+          $scope.teams = TeamFactory.teams
+          $scope.associations = PTFactory.associations
+          console.log($scope.associations)
+          $scope.user = {}
+          $scope.team = {}
+        })
+      }
+
+      $scope.remove_association = function(id){
+        $scope.associations.splice(id,1)
+      }
+    })
+
+    app.factory('userFactory', function(){
+      var factory = {}
+      factory.users = []
+      factory.add = function(user,callback){
+        factory.users.push(user)
+        callback()
+      }
+      return factory
+    })
+
+    app.factory('TeamFactory', function(){
+      var factory = {}
+      factory.teams = []
+      factory.add = function(team,callback){
+        factory.teams.push(team)
+        callback()
+      }
+      return factory
+    })
+
+    app.factory('PTFactory', function(){
+      var factory = {}
+      factory.associations = []
+      factory.add = function(player,team,callback){
+        var assoc = {
+          name: player,
+          team_name: team
+        }
+        factory.associations.push(assoc)
+        console.log(factory.associations,"this is array?")
+        callback()
+      }
+      return factory
+    })
+
+    </script>
+  </head>
+  <body>
+    <h2><a href="#!/player">Players</a> | <a href="#!/team">Teams</a> | <a href="#!/association">Association</a></h2>
+    <div ng-view>
+      <!-- Partials will load here! -->
+    </div>
+  </body>
+</html>

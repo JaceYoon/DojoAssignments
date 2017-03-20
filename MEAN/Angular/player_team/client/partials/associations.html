@@ -1,0 +1,56 @@
+<style media="screen">
+#head{
+  background-color: grey;
+  color:white;
+  border: 2px solid gold;
+  padding-right: 15px;
+}
+.show td{
+  padding-right:10px;
+  background-color: lightblue;
+  color:black;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid gold;
+}
+#add{
+  background-color: green;
+  color:white;
+}
+#remove{
+  background-color: purple;
+  color:white;
+  font-weight: 200;
+}
+</style>
+<div>
+  <div>
+    <h2>Association Controller</h2>
+      <form ng-submit="add_association()">
+        <select class="" name="" ng-model="user.name">
+          <option value="" disabled selected>select</option>
+          <option ng-repeat="user in users" value="{{user.name}}"ng-bind='user.name' ></option>
+        </select>
+        <select class="" name="" ng-model="team.team_name">
+          <option value="" disabled selected>select</option>
+          <option ng-repeat="team in teams" value="{{team.name}}" ng-bind='team.name'></option>
+        </select>
+        <button id="add" type="submit" user="button" ng-click="">Assign Player to Team</button>
+      </form>
+      <br>
+      Filter : <input type="text" placeholder="Find User" ng-model="UserFilter">
+    <div>
+    <br>
+    <table>
+      <tr id="head">
+        <td ng-click="sortBy = 'name'; sortReverse = !sortReverse">Name</td>
+        <td ng-click="sortBy = 'team'; sortReverse = !sortReverse">Team</td>
+        <td>Actions</td>
+      </tr>
+      <tr class="show" ng-repeat="association in associations track by $index">
+        <td>{{association["name"]["name"]}}</td>
+        <td>{{association["team_name"]["team_name"]}}</td>
+        <td><button id="remove" type="submit" name="button" ng-click="remove_association($index)">Clear Assignment</button></td>
+      </tr>
+    </table>
+</div>

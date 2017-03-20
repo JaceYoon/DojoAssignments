@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript" src='app.js'></script>
+    <script type="text/javascript" src='controllers/dog.js'></script>
+  </head>
+  <body ng-controller='dogController'>
+    <p ng-repeat='hello in pets'>{{hello}}</p>
+    <p ng-repeat='pet in pets track by $index'>{{$index}}</p>
+  </body>
+</html>

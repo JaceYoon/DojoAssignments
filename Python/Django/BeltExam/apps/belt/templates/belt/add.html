@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Create a New Wish List Item</h1>
+    <a href="{% url 'belt:main'%}">home</a>
+    <a href="{% url 'belt:logout'%}"><button type="submit" name="logout">Logout</button></a>
+    <form class="" action="{% url 'belt:additem'%}" method="post">
+      {% csrf_token %}
+      <label for="item">Item/Product</label>
+      <input type="text" name="item">
+      <button type="submit" name="submit">Add</button>
+    </form>
+    {% if messages %}
+      {% for message in messages %}
+      <p>{{message}}</p>
+      {% endfor %}
+    {% endif %}
+  </body>
+</html>

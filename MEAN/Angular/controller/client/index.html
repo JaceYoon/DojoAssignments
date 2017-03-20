@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="./angular/angular.js"></script>
+    <script type="text/javascript">
+      var app = angular.module('app',[])
+
+      app.controller('JaceController',['$scope', function($scope){
+          $scope.foods = []
+          $scope.add_food = function(){
+          $scope.foods.push($scope.new_food)
+          $scope.new_food=""
+        }
+      }])
+    </script>
+  </head>
+  <body ng-controller="JaceController">
+    <div>
+      <form ng-submit="add_food()">
+        Add Food!<input type="text" ng-model="new_food">
+        <button type="submit" food="button" ng-click="">submit</button>
+      </form>
+      <p ng-if="new_food"> You are currently typing: {{new_food}} </p>
+      <div style="border:3px solid black;">
+        <input type="text" placeholder="filter..!!" ng-model="foodFilter">
+        <p ng-repeat="food in foods | filter:foodFilter track by $index"> {{food}} </p>
+      </div>
+    </div>
+  </body>
+</html>

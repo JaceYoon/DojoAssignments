@@ -1,0 +1,15 @@
+table{
+  border: 1px solid black;
+}
+td{
+  border-right: 1px solid black;
+  padding-right: 15px;
+}
+a{
+  padding-right:15px;
+}
+#update{
+  margin-left: 70px;
+  color:white;
+  background-color: green;
+}

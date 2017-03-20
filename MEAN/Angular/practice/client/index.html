@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = 'app'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src='angular/angular.js' charest="utf-8"></script>
+    <script type="text/javascript" src='angular-route/angular-route.js' charest="utf-8"></script>
+
+    <script>
+    var app = angular.module('app', ['ngRoute'])
+
+    app.config(function ($routeProvider){
+      $routeProvider
+      .when('/',{
+        templateUrl: 'partials/partial.html',
+        controller: 'viewController'
+      })
+      .when('/partial2',{
+        templateUrl: 'partials/partial2.html',
+        controller: 'view2Controller'
+      })
+      .otherwise({
+        redirectTo:'/'
+      })
+    })
+
+    app.controller('viewController', function($scope){
+      $scope.sports = ['pingpong','baseball','soccer','tennis']
+    })
+    app.controller('view2Controller', function($scope){
+      $scope.message = 'Hello this is second page'
+    })
+    </script>
+
+  </head>
+  <body>
+    <div ng-view>
+      <!-- Partials will load here! -->
+    </div>
+    <h1>hello there</h1>
+    <a href="#!/">Parial</a> | <a href="#!/partial2">Parial2</a>
+  </body>
+</html>

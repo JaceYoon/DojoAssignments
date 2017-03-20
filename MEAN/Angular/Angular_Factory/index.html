@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #head{
+        background-color: grey;
+        color:white;
+        border: 2px solid gold;
+        padding-right: 15px;
+      }
+      .show td{
+        padding-right:10px;
+      }
+    </style>
+    <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="./controllers/product.js"></script>
+        <script type="text/javascript" src="./factories/product.js"></script>
+  </head>
+  <body>
+    <div ng-controller='productController'>
+      <form >
+        product name:<input type="text" ng-model='new_product.name'>
+        price: <input type="number" ng-model='new_product.price'>
+        <button type="submit" name="button" ng-click="add()">Add</button>
+      </form>
+    <input type="text" ng-model="product_filter" placeholder="filter..">
+    <div>
+      <table>
+        <tr id="head">
+          <td>Name</td>
+          <td>Price</td>
+          <td>Actions</td>
+        </tr>
+        <tr class="show" ng-repeat='product in products | filter:product_filter'>
+          <td>{{product.name}}</td>
+          <td>${{product.price}}</td>
+          <td><button type="submit" name="button" ng-click="remove()">delete</button></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </body>
+</html>

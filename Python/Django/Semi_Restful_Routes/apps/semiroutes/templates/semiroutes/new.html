@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>add a project</title>
+  </head>
+  <body>
+    <div class="">
+      <h1>Add a new product</h1>
+      <form class="" action="{% url 'home:create' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="name">
+        <label for="name">Name</label>
+        <label for="description">Description</label>
+        <input type="text" name="description">
+        <label for="price">Price</label>
+        <input type="text" name="price">
+        <input type="date" name="" value="">
+        <button type="submit" name="submit">Create</button>
+      </form>
+    </div>
+    <div class="">
+      <a href="{% url 'home:home' %}">Go Back</a>
+    </div>
+  </body>
+</html>

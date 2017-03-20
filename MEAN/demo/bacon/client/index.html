@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript">
+      var MyAppModule = angular.module("MyApp", [])
+
+      MyAppModule.controller("testController", function($scope){
+        this.names = ["Jace","Taylor","Ian"]
+
+        this.add_name = function(){
+          this.names.push(this.new_name)
+          this.new_name=""
+        }
+      })
+    </script>
+  </head>
+  <body ng-app="MyApp">
+    <h2>sup</h2>
+    <h4>{{5 * 25}}</h4>
+    <div ng-controller="testController as testCtrl">
+      {{testCtrl.names}}
+      <ul>
+        <li ng-repeat="name in testCtrl.names"> {{name}} </li>
+      </ul>
+
+      <form ng-submit="testCtrl.add_name()">
+        <input type="text" ng-model="testCtrl.new_name">
+        <button type="submit" name="button" ng-click="">submit</button>
+      </form>
+      <p> {{testCtrl.new_name}} </p>
+    </div>
+  </body>
+</html>
