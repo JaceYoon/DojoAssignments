@@ -1,0 +1,8 @@
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/first_assignment/Collections_Practice/bin/Debug/netcoreapp1.1/Collections_Practice.deps.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/first_assignment/Collections_Practice/bin/Debug/netcoreapp1.1/Collections_Practice.runtimeconfig.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/first_assignment/Collections_Practice/bin/Debug/netcoreapp1.1/Collections_Practice.runtimeconfig.dev.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/first_assignment/Collections_Practice/bin/Debug/netcoreapp1.1/Collections_Practice.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/first_assignment/Collections_Practice/bin/Debug/netcoreapp1.1/Collections_Practice.pdb
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/first_assignment/Collections_Practice/obj/Debug/netcoreapp1.1/Collections_Practice.AssemblyInfo.cs
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/first_assignment/Collections_Practice/obj/Debug/netcoreapp1.1/Collections_Practice.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/first_assignment/Collections_Practice/obj/Debug/netcoreapp1.1/Collections_Practice.pdb

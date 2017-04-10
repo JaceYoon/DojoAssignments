@@ -1,0 +1,8 @@
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/puzzle_practice/puzzle/bin/Debug/netcoreapp1.1/puzzle.deps.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/puzzle_practice/puzzle/bin/Debug/netcoreapp1.1/puzzle.runtimeconfig.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/puzzle_practice/puzzle/bin/Debug/netcoreapp1.1/puzzle.runtimeconfig.dev.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/puzzle_practice/puzzle/bin/Debug/netcoreapp1.1/puzzle.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/puzzle_practice/puzzle/bin/Debug/netcoreapp1.1/puzzle.pdb
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/puzzle_practice/puzzle/obj/Debug/netcoreapp1.1/puzzle.AssemblyInfo.cs
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/puzzle_practice/puzzle/obj/Debug/netcoreapp1.1/puzzle.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/puzzle_practice/puzzle/obj/Debug/netcoreapp1.1/puzzle.pdb

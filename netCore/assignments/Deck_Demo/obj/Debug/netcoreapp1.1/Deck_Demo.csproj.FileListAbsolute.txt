@@ -1,0 +1,8 @@
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/Deck_Demo/bin/Debug/netcoreapp1.1/Deck_Demo.deps.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/Deck_Demo/bin/Debug/netcoreapp1.1/Deck_Demo.runtimeconfig.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/Deck_Demo/bin/Debug/netcoreapp1.1/Deck_Demo.runtimeconfig.dev.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/Deck_Demo/bin/Debug/netcoreapp1.1/Deck_Demo.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/Deck_Demo/bin/Debug/netcoreapp1.1/Deck_Demo.pdb
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/Deck_Demo/obj/Debug/netcoreapp1.1/Deck_Demo.AssemblyInfo.cs
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/Deck_Demo/obj/Debug/netcoreapp1.1/Deck_Demo.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/Deck_Demo/obj/Debug/netcoreapp1.1/Deck_Demo.pdb

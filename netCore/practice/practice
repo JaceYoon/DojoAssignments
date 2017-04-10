@@ -1,0 +1,9 @@
+int rings = 5;
+if (rings >= 5)
+{
+    Console.WriteLine("You are welcome to join the party");
+}
+else
+{
+    Console.WriteLine("Go win some more rings");
+}

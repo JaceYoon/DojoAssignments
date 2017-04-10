@@ -1,0 +1,121 @@
+public static void Python(){
+            Hero Jace = new Hero("Jace");
+            Enemy Tyler = new Enemy("Tyler");
+            Enemy Phil = new Enemy("Phil");
+            System.Console.WriteLine("Welcome to Python Stage!");
+            System.Console.WriteLine("Do You want to meet Instructor Phil first? Y/N");
+            
+            string line = Console.ReadLine();
+            switch(line){
+                case "y":
+                    System.Console.WriteLine("----------------------------------------------------");
+                    System.Console.WriteLine("Hey {0}! I'm instructor {1}, I have quest for you do you want listen? Y/N",Jace.name, Phil.name);
+                    
+                    string line2 = Console.ReadLine();
+                    switch(line2){
+
+                        case "y":
+                            System.Console.WriteLine("----------------------------------------------------");
+                            System.Console.WriteLine("I want to go camping somewhere and you find the place for me! Y/N");
+                            string line3 = Console.ReadLine();
+                            switch(line3){
+
+                                case "win":
+                                    System.Console.WriteLine("There is Phil over there! you want to go back to him? Y/N");
+                                    break;
+
+                                case "y":
+                                    System.Console.WriteLine("----------------------------------------------------");
+                                    System.Console.WriteLine("You are traveling.... and you faced monster Tyler!!");
+                                    System.Console.WriteLine("Do You want to attack him? (He has {0} hp now..) Y/N",Tyler.health);
+                                    
+
+                                    if(Tyler.health <=0){
+                                        System.Console.WriteLine("You defeacted Tyler!! You got information about nice location for camping!!");
+                                        goto case "win";
+                                    }
+
+                                    string line4 = Console.ReadLine();
+                                    switch(line4){
+                                        case "y":
+                                            if(Jace.health <=0){
+                                                System.Console.WriteLine("You are dead..");
+                                                System.Console.WriteLine("Game Over..");
+                                                break;
+                                            }
+                                            else{
+                                                System.Console.WriteLine("----------------------------------------------------");
+                                                System.Console.WriteLine("You are attacking Tyler!! and.....");
+                                                System.Console.WriteLine("----------------------------------------------------");
+                                                Random rand = new Random();
+                                                int luck = rand.Next(0,10);
+                                                int luck2 = rand.Next(0,5);
+                                                if(luck >= 4){
+                                                    Jace.attack(Tyler);
+                                                    System.Console.WriteLine("----------------------------------------------------");
+                                                    System.Console.WriteLine("successfully attack Tyler!!");
+                                                    System.Console.WriteLine("Tyler has {0} hp now",Tyler.health);
+                                                    System.Console.WriteLine("----------------------------------------------------");
+                                                    }
+                                                if(luck < 4){
+                                                    System.Console.WriteLine("----------------------------------------------------");
+                                                    System.Console.WriteLine("attack failed");
+                                                }
+                                                if(luck2 >= 2){
+                                                    Tyler.attack(Jace);
+                                                    System.Console.WriteLine("----------------------------------------------------");
+                                                    System.Console.WriteLine("Tyler successfully attacked Jace!!");
+                                                    System.Console.WriteLine("Jace has {0} hp now",Jace.health);
+                                                    break;
+                                                }
+                                                if(luck2 < 2){
+                                                    System.Console.WriteLine("----------------------------------------------------");
+                                                    System.Console.WriteLine("Tyler attacked fail");
+                                                    System.Console.WriteLine("----------------------------------------------------");
+                                                    break;
+                                                }
+                                            }
+                                            break; //break line4 yes
+                                        }
+                                        goto case "y"; //break line3 yes
+
+                                    case "defeact":
+                                        System.Console.WriteLine("Do you want meet Phil?");
+                                        break;
+                            }
+                            break; //break line2 yes
+                        case "n":
+                            System.Console.WriteLine("Phil attacked you and following you.. Do you want to talk with him? or run away from him? talk/runaway");
+                            Phil.attack(Jace);
+                            System.Console.WriteLine("You currently have {0} hp left",Jace.health);
+                            
+                            line2 = Console.ReadLine();
+                            switch(line2){
+                                case "talk":
+                                    System.Console.WriteLine("Hey I'm Phil your instructor brah I have quest for you do you want listen?");
+                                    break;
+                            }
+                            break; //break line2 no
+                    }
+                    break; //break line yes
+
+                case "n":
+                    System.Console.WriteLine("You can travel Python stage free but have highly chance to meet moster like Tyler!");
+                    System.Console.WriteLine("Do you really don't want to meet Phil? Y/N");
+                    line = Console.ReadLine();
+                    switch(line){
+                        case "y":
+                        break;
+
+                        case "n":
+                        System.Console.WriteLine("Game over");
+                        break;
+                    }
+                    goto case "y"; //line no
+                default:
+                    System.Console.WriteLine("Type something else..");
+                    Python();
+                    break;
+            }
+            
+        } 

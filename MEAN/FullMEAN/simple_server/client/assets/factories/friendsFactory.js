@@ -26,8 +26,8 @@ app.factory('friendsFactory', ['$http','$location', function($http, $location, $
     //     }
     // })
   }
-  factory.delete = function(id) {
-    $http.delete('/friends/'+id).then(function(){
+  factory.destroy = function(id) {
+    $http.get('/friends/'+id).then(function(){
       $route.reload()
     })
   }

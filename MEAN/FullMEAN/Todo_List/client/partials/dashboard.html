@@ -1,0 +1,48 @@
+<div ng-controller='userController' class="container">
+  <hr>
+    <h3 >Welcome <span style="color:green">{{curUser.name}}</span> |   <a href="/logout" style="font-size:20px;">Logout</a></h3>
+  <hr>
+    <p><a href="#/add"><button type="submit" ng-click="" class="btn btn-primary btn-s">Create New Todo List</button></a> | <button type="submit" ng-click"" class="btn btn-danger btn-s">Spy on others..</button></p>
+    <p ng-if='curUser.name !=Jace'>you're not Jace</p>
+</div>
+
+<div class="container" ng-controller='todoController'>
+  <div class="container">
+    <h2>Your Todo List</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="active">Title</th>
+          <th class="info">Due date</th>
+          <th class="warning">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat='todo in todos'>
+          <td><a href="#/show/{{todo._id}}">{{todo.title}}</a></td>
+          <td>{{todo.duedate}}</td>
+          <td><button type="submit" class="btn btn-primary btn-s">Complete</button> | <button type="submit" class="btn btn-warning btn-s">Edit</button> </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container">
+    <h2>Completed Todo List</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="success">Title</th>
+          <th class="primary">Description</th>
+          <th class="danger">Completed Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat='todo in todos'>
+          <td>{{todo.title}}</td>
+          <td>{{todo.description}}</td>
+          <td>{{todo.updated_at}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

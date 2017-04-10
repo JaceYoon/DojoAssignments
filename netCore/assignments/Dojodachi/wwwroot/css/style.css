@@ -1,0 +1,39 @@
+h4{
+    font-family : 'Poiret One';
+}
+#jacenavi{
+    font-family :'Amatic SC';
+    font-size : 20px;
+}
+#jacecontent{
+    font-family : 'Poiret One';
+}
+
+#contactt h4{
+    text-align: center;
+}
+
+#jacecontent h4{
+    text-align: center;
+}
+
+.movingleft{
+    margin-left: 2500px;
+}
+
+#contactt{
+    text-align: center;
+}
+
+#atags button{
+    margin-left: 50px;
+    font-family:'Amatic SC'; font-size:22px;
+}
+
+#table th{
+    text-align: center; font-family:'Amatic SC'; font-size:22px;
+}
+
+#table td{
+    text-align: center; font-family:'Amatic SC'; font-size:22px;
+}

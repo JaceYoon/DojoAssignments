@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Hello!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div style="text-align: center;" class="ui centered inverted segment">
+            <h3> Random passcode (passcode #@ViewBag.Count) </h3>
+            <div style="border:1px solid white; max-width: 250px; margin-left:690px">
+                <h3>@ViewBag.PassCode</h3>
+            </div>
+            <hr>
+            <div>
+                <a href="/"><button class="ui inverted olive basic button">Generate</button></a>
+            </div>
+        </div>
+    </body>
+</html>

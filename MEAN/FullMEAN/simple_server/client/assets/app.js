@@ -9,6 +9,9 @@ app.config(function ($routeProvider) {
       templateUrl : './partials/new.html',
       controller : 'newController'
     })
+    .when("/show", {
+      templateUrl : './partials/show.html'
+    })
     .otherwise({
       redirectTo:'/'
     })

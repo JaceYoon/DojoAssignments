@@ -1,0 +1,8 @@
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/oop_csharp/bin/Debug/netcoreapp1.1/oop_csharp.deps.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/oop_csharp/bin/Debug/netcoreapp1.1/oop_csharp.runtimeconfig.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/oop_csharp/bin/Debug/netcoreapp1.1/oop_csharp.runtimeconfig.dev.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/oop_csharp/bin/Debug/netcoreapp1.1/oop_csharp.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/oop_csharp/bin/Debug/netcoreapp1.1/oop_csharp.pdb
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/oop_csharp/obj/Debug/netcoreapp1.1/oop_csharp.AssemblyInfo.cs
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/oop_csharp/obj/Debug/netcoreapp1.1/oop_csharp.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/oop_csharp/obj/Debug/netcoreapp1.1/oop_csharp.pdb

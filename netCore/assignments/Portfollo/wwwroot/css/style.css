@@ -1,0 +1,26 @@
+h4{
+    font-family : 'Poiret One';
+}
+#jacenavi{
+    font-family :'Amatic SC';
+    font-size : 20px;
+}
+#jacecontent{
+    font-family : 'Poiret One';
+}
+
+#contactt h4{
+    text-align: center;
+}
+
+#jacecontent h4{
+    text-align: center;
+}
+
+.movingleft{
+    margin-left: 2500px;
+}
+
+#contactt{
+    text-align: center;
+}

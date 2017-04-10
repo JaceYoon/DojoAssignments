@@ -1,0 +1,17 @@
+<div class="container">
+
+  <p style="color:red;"ng-repeat='error in errors'>{{error}}</p>
+
+  <form ng-submit="create()">
+    <input type="text" placeholder="Todo Title?" ng-model="todo.title">
+    <br>
+    <br>
+    <input type="text" placeholder="Put due date!" ng-model="todo.duedate" onfocus="(this.type='date')">
+    <br>
+    <br>
+    <textarea name="name" rows="8" cols="80" placeholder="Write some descriptions" ng-model="todo.description"></textarea>
+    <br>
+    <br>
+    <button type="submit" name="button" class="btn btn-primary btn-s">Add Todo List!</button>
+  </form>
+</div>

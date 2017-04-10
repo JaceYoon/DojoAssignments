@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Hello!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        
+    </head>
+    <body>    
+        <div class="ui secondary pointing menu" id="jacenavi">
+            <a class="header item" href="/">Home</a>
+            <a class="item" href="/project">Project</a>
+            <a class="item" href="/contact">Contact</a>
+            <span class="floated right item">Hello Jace!</span>
+        </div>
+        
+        <div class="ui inverted segment">
+            <form class="ui form" action="submit" method="post">
+                <h4 class="ui dividing purple inverted header">Dojo Survey</h4>
+                <div class="ui inverted form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>First Name</label>
+                            <input name="fname" placeholder="First Name" type="text">
+                        </div>
+                        <div class="field">
+                            <label>Last Name</label>
+                            <input name="lname" placeholder="Last Name" type="text">
+                        </div>
+                    </div>
+
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Location</label>
+                            <select name="location" class="ui fluid dropdown">
+                                <option value="la">LA</option>
+                                <option value="seattle">Seattle</option>
+                                <option value="tx">Texas</option>
+                                <option value="ny">NewYork</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label>Language</label>
+                            <select name="language" class="ui fluid dropdown">
+                                <option value="csharp">C#</option>
+                                <option value="python">Python</option>
+                                <option value="ruby">Ruby</option>
+                                <option value="ios">iOS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ui form">
+                        <div class="field">
+                            <label>Comment</label>
+                            <textarea name="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="ui divider"></div>
+                    <button type="submit" class="ui inverted purple basic button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

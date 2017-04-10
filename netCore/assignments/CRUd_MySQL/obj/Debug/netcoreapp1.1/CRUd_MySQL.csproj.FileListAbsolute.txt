@@ -1,0 +1,8 @@
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/CRUd_MySQL/bin/Debug/netcoreapp1.1/CRUd_MySQL.deps.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/CRUd_MySQL/bin/Debug/netcoreapp1.1/CRUd_MySQL.runtimeconfig.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/CRUd_MySQL/bin/Debug/netcoreapp1.1/CRUd_MySQL.runtimeconfig.dev.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/CRUd_MySQL/bin/Debug/netcoreapp1.1/CRUd_MySQL.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/CRUd_MySQL/bin/Debug/netcoreapp1.1/CRUd_MySQL.pdb
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/CRUd_MySQL/obj/Debug/netcoreapp1.1/CRUd_MySQL.AssemblyInfo.cs
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/CRUd_MySQL/obj/Debug/netcoreapp1.1/CRUd_MySQL.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/CRUd_MySQL/obj/Debug/netcoreapp1.1/CRUd_MySQL.pdb

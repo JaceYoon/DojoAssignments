@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Hello!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        
+    </head>
+    <body>    
+        <div class="ui secondary pointing menu" id="jacenavi">
+            <a class="header item" href="/">Home</a>
+            <a class="item" href="/project">Project</a>
+            <a class="item" href="/contact">Contact</a>
+            <span class="floated right item">Hello Jace!</span>
+        </div>
+        
+        <div class="ui inverted segment">
+            <h4 class="ui dividing purple inverted header">Your Information</h4>
+            <h4 class="ui grey inverted header">You Name : @ViewBag.name </h4>
+            <h4 class="ui grey inverted header">Your Location : @ViewBag.location </h4>
+            <h4 class="ui grey inverted header">Your Language : @ViewBag.language </h4>
+            <h4 class="ui grey inverted header">Your Comment : @ViewBag.comment </h4>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+@{
+    DateTime currentDate = DateTime.Now;
+    string formattedDate = String.Format("{0:MMM d, yyyy}", currentDate);
+    string formattedTime = String.Format("{0:hh:mm tt}", currentDate);
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Hello!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+        <link rel="stylesheet" href="~/css/style.css"/>
+    </head>
+    <body>
+        <div class="ui form segment">
+            <h2 class="ui center aligned icon header">
+                <i class="comments outline icon"></i>
+                </h2>
+            <h1 id="titlee">The current time and date:</h1>
+        </div>
+        <div class="field">
+            <table class="ui table">
+                <tbody>
+                    <tr>
+                        <td id="date" class="collapsing">
+                            <i class="folder icon"></i> Current date
+                        </td>
+                        <td id="time" class="collapsing">
+                            <i class="folder icon"></i> Current Time
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="collapsing">
+                            <i class="folder icon"></i> @formattedDate
+                        </td>
+                        <td class="collapsing">
+                            <i class="folder icon"></i> @formattedTime
+                        </td>
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+    </body>
+</html>

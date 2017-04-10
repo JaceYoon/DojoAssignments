@@ -1,0 +1,8 @@
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/WNS/bin/Debug/netcoreapp1.1/WNS.deps.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/WNS/bin/Debug/netcoreapp1.1/WNS.runtimeconfig.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/WNS/bin/Debug/netcoreapp1.1/WNS.runtimeconfig.dev.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/WNS/bin/Debug/netcoreapp1.1/WNS.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/WNS/bin/Debug/netcoreapp1.1/WNS.pdb
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/WNS/obj/Debug/netcoreapp1.1/WNS.AssemblyInfo.cs
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/WNS/obj/Debug/netcoreapp1.1/WNS.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/assignments/WNS/obj/Debug/netcoreapp1.1/WNS.pdb

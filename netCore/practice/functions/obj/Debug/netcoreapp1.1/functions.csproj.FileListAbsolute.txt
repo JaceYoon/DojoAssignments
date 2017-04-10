@@ -1,0 +1,8 @@
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/functions/bin/Debug/netcoreapp1.1/functions.deps.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/functions/bin/Debug/netcoreapp1.1/functions.runtimeconfig.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/functions/bin/Debug/netcoreapp1.1/functions.runtimeconfig.dev.json
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/functions/bin/Debug/netcoreapp1.1/functions.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/functions/bin/Debug/netcoreapp1.1/functions.pdb
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/functions/obj/Debug/netcoreapp1.1/functions.AssemblyInfo.cs
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/functions/obj/Debug/netcoreapp1.1/functions.dll
+/Users/jaceyoon/Desktop/DojoAssignments/netCore/practice/functions/obj/Debug/netcoreapp1.1/functions.pdb
